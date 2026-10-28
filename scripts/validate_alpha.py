@@ -64,6 +64,33 @@ def validate_maintenance(d):
     for c in d["coverage"]:
         assert c["listed_permits"] == sum(r["county"] == c["county"] for r in records)
 
+def validate_products(d):
+    assert d["data_type"] == "product_sorted_maintenance_permissions_not_installations"
+    assert d["source_url"].startswith("https://floridadep.gov/sites/default/files/")
+    assert [x["county"] for x in d["coverage"]] == ["Baker", "Clay", "Duval", "Nassau", "St. Johns"]
+    records = d["records"]
+    if d.get("source_status") == "pending_initial_ingestion":
+        assert not records
+        return
+    assert d["source_status"] == "verified_report_extraction"
+    iso(d["retrieved_at"])
+    dt.date.fromisoformat(d["report_date"])
+    assert re.fullmatch(r"[a-f0-9]{64}", d["source_sha256"])
+    assert len(records) >= 20
+    keys = set()
+    for r in records:
+        assert r["county"] in TERRITORY
+        assert 2 <= len(r["city"]) <= 100 and not PRIVATE.search(r["city"])
+        assert 3 <= len(r["entity_name"]) <= 150 and not PRIVATE.search(r["entity_name"])
+        assert 2 <= len(r["product"]) <= 95 and not PRIVATE.search(r["product"])
+        assert type(r["source_page"]) is int and r["source_page"] > 0
+        assert r["evidence"] == "official_product_sorted_maintenance_listing"
+        key = (r["county"], r["city"].casefold(), r["entity_name"].casefold(), r["product"].casefold())
+        assert key not in keys
+        keys.add(key)
+    for c in d["coverage"]:
+        assert c["listing_rows"] == sum(r["county"] == c["county"] for r in records)
+
 def validate_empty_evidence(d, kind):
     assert d["data_type"] == kind
     assert d["records"] == [], "Evidence-backed records require a separate authorized ingestion review"
@@ -72,9 +99,10 @@ def validate_empty_evidence(d, kind):
 def main():
     validate_inventory(load("septic-inventory-aggregate.json"))
     validate_maintenance(load("maintenance-entities.json"))
+    validate_products(load("maintenance-products.json"))
     validate_empty_evidence(load("atu-pbts-systems.json"), "verified_atu_pbts_installations")
     validate_empty_evidence(load("opportunities.json"), "evidence_backed_opportunities")
-    print("PASS: inventory, maintenance permissions, empty verified systems and opportunities")
+    print("PASS: inventory, county and product maintenance permissions, empty verified systems and opportunities")
 
 if __name__ == "__main__":
     main()
