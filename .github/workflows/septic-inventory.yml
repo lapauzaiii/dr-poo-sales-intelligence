@@ -1,6 +1,10 @@
 name: Florida DEP septic inventory aggregates
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/fetch_septic_inventory.py'
+      - '.github/workflows/septic-inventory.yml'
   schedule:
     - cron: '43 11 * * *'
 permissions:
