@@ -47,21 +47,44 @@ jobs:
         run: python scripts/validate_alpha.py
       - name: Validate allowlisted production bundle
         run: python scripts/build_static.py
-      - name: Publish validated maintenance snapshot
+      - name: Publish validated maintenance snapshot without overwriting newer data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/maintenance-entities.json data/maintenance-products.json
-          if ! git diff --cached --quiet; then
+          cp data/maintenance-entities.json "$RUNNER_TEMP/maintenance-entities.json"
+          cp data/maintenance-products.json "$RUNNER_TEMP/maintenance-products.json"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            python - "$RUNNER_TEMP" <<'PY'
+          import json, pathlib, shutil, sys
+          root=pathlib.Path("data")
+          temp=pathlib.Path(sys.argv[1])
+          for name in ("maintenance-entities.json","maintenance-products.json"):
+              dest=root/name
+              candidate=temp/name
+              new=json.loads(candidate.read_text())
+              old=json.loads(dest.read_text())
+              if (old.get("report_date") or "") > (new.get("report_date") or ""):
+                  print("Preserving newer report",name)
+                  continue
+              if old.get("source_sha256")==new.get("source_sha256") and (old.get("retrieved_at") or "") >= (new.get("retrieved_at") or ""):
+                  print("Preserving already refreshed snapshot",name)
+                  continue
+              shutil.copyfile(candidate,dest)
+          PY
+            python scripts/validate_alpha.py
+            git add data/maintenance-entities.json data/maintenance-products.json
+            if git diff --cached --quiet; then
+              echo "Latest validated snapshots already published"
+              exit 0
+            fi
             git commit -m "Refresh verified DEP maintenance entity permissions"
-            for attempt in 1 2 3; do
-              git fetch origin main
-              git rebase origin/main
-              if git push origin HEAD:main; then
-                exit 0
-              fi
-              sleep $((attempt * 2))
-            done
-            echo "Unable to publish after three safe non-force attempts" >&2
-            exit 1
-          fi
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Concurrent update detected; retrying against current main" >&2
+            sleep $((attempt * 2))
+          done
+          echo "Unable to publish after five safe non-force attempts" >&2
+          exit 1
