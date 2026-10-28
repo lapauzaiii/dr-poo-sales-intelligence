@@ -1,0 +1,49 @@
+{
+  "validated_on": "2026-10-27",
+  "coverage": [
+    "Duval",
+    "Clay",
+    "St. Johns",
+    "Nassau",
+    "Baker"
+  ],
+  "sources": [
+    {
+      "id": "fl-doh-ostds-issued",
+      "title": "Florida DOH OSTDS permits issued in last 30 days",
+      "url": "https://www.floridahealth.gov/licensing-regulations/regulated-facilities/onsite-sewage-septic/ostds-permits-issued-in-the-last-30-days/",
+      "classification": "permit_activity",
+      "verification": "official landing page confirmed; structured records and automated export not yet validated",
+      "ingestion": "blocked_pending_feed_validation"
+    },
+    {
+      "id": "clay-inspections",
+      "title": "Clay County septic inspection status",
+      "url": "https://claysepticonlineservices.floridahealth.gov/Check-the-status-of-an-inspection/",
+      "classification": "inspection_activity",
+      "verification": "public searchable table confirmed; biweekly updates stated; permit number and inspection status visible; not proof of daily permit issuance",
+      "ingestion": "blocked_pending_automation_permission_and_schema"
+    },
+    {
+      "id": "stjohns-permit-search",
+      "title": "St. Johns County permit search",
+      "url": "https://webapp.sjcfl.us/watswebx/Permit/SearchPermit.aspx",
+      "classification": "building_permits",
+      "verification": "official search fields include contractor, septic number, issue date; bulk access and reuse not yet validated",
+      "ingestion": "blocked_pending_bulk_access_validation"
+    },
+    {
+      "id": "fl-septic-gis",
+      "title": "Florida DEP septic systems GIS",
+      "url": "https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/SEPTIC_SYSTEMS/MapServer/0",
+      "classification": "historical_septic_inventory",
+      "verification": "ArcGIS REST query interface verified; records represent septic likelihood/inventory, not newly issued permits or competitor wins",
+      "ingestion": "eligible_for_separate_inventory_module_not_permit_feed"
+    }
+  ],
+  "policy": {
+    "commercial_sources": "only with documented permission/license; none connected",
+    "privacy": "no personal names, property addresses, parcel IDs, or owner details in GitHub-published exports",
+    "fallback": "do not relabel demo fixture as live or generate synthetic rows when sources fail"
+  }
+}
