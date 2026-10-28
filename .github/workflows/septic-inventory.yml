@@ -1,0 +1,31 @@
+name: Florida DEP septic inventory aggregates
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 11 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: septic-inventory
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch aggregate inventory from official DEP ArcGIS REST endpoint
+        run: python scripts/fetch_septic_inventory.py
+      - name: Validate aggregate output
+        run: python -m json.tool data/septic-inventory-aggregate.json > /dev/null
+      - name: Commit verified snapshot only if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/septic-inventory-aggregate.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh official Florida septic inventory aggregates"
+            git push
+          fi
