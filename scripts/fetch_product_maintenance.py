@@ -96,11 +96,11 @@ def main():
          "coverage":[{"county":c,"listing_rows":sum(r["county"]==c for r in records),
                       "status":"listed_in_report" if any(r["county"]==c for r in records) else "not_listed_in_report"} for c in COUNTIES],
          "records":records,"notes":"Product-sorted provider listing, no maintenance permit IDs. Business names are not deduplicated across permit jurisdictions and must not be used as installed-system evidence."}
-    p.output.parent.mkdir(parents=True,exist_ok=True)
+    args.output.parent.mkdir(parents=True,exist_ok=True)
     import os,tempfile
-    with tempfile.NamedTemporaryFile(mode="w",encoding="utf-8",dir=p.output.parent,delete=False) as f:
+    with tempfile.NamedTemporaryFile(mode="w",encoding="utf-8",dir=args.output.parent,delete=False) as f:
         json.dump(out,f,indent=2,ensure_ascii=False);f.write("\n");temp=f.name
-    os.replace(temp,p.output)
+    os.replace(temp,args.output)
     print("Validated",len(records),"product/provider listing rows from",report_date)
 
 if __name__=="__main__":
