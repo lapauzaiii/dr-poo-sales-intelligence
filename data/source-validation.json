@@ -1,5 +1,5 @@
 {
-  "validated_on": "2026-10-27",
+  "validated_on": "2026-10-28",
   "coverage": [
     "Duval",
     "Clay",
@@ -37,8 +37,8 @@
       "title": "Florida DEP septic systems GIS",
       "url": "https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/SEPTIC_SYSTEMS/MapServer/0",
       "classification": "historical_septic_inventory",
-      "verification": "ArcGIS REST query interface verified; records represent septic likelihood/inventory, not newly issued permits or competitor wins",
-      "ingestion": "eligible_for_separate_inventory_module_not_permit_feed"
+      "verification": "ArcGIS grouped CO_NO/WW query validated with 201 grouped rows and official DOH DOR county coded-value domain; historical wastewater certainty, not equipment.",
+      "ingestion": "automated_grouped_inventory_verified"
     }
   ],
   "policy": {
