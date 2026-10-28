@@ -1,6 +1,6 @@
 {
   "standard": "Florida Department of Revenue county code",
-  "source": "https://www.floridarevenue.com/Forms_library/current/e911ppw.pdf",
+  "source": "https://prodenv.dep.state.fl.us/common/common_solaris/LITS/LITS_UserGuide_Vol12_AppendicesandIndex.pdf",
   "counties": {
     "12": "Baker",
     "20": "Clay",
@@ -12,5 +12,7 @@
     "septic_inventory": "not_supported",
     "aerobic_treatment_unit": "requires operating permit or inspection record",
     "lift_station": "requires pump station permit or engineering record"
-  }
+  },
+  "source_confirmation": "FL-SOLARIS county code appendix explicitly maps DOR 12 Baker, 20 Clay, 26 Duval, 55 Nassau, 65 St. Johns; note DEP standard codes differ from DOR codes by 10",
+  "inventory_field_validation": "DEP septic inventory layer exposes WW wastewater certainty, not equipment model or lift station type"
 }
