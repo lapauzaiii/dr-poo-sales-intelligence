@@ -1,38 +1,599 @@
 {
   "dataset": "fl_dep_maintenance_entities_by_product",
   "data_type": "product_sorted_maintenance_permissions_not_installations",
-  "source_status": "pending_initial_ingestion",
+  "source_status": "verified_report_extraction",
   "source_url": "https://floridadep.gov/sites/default/files/2026_0924_MEByProduct.pdf",
-  "report_date": null,
-  "retrieved_at": null,
-  "source_sha256": null,
+  "report_date": "2026-09-15",
+  "retrieved_at": "2026-10-28T05:39:13.678797+00:00",
+  "source_sha256": "d8bcb737141c072291ee9b5d8980f01016241efbd469e2c0013a78c180b0914f",
   "coverage": [
     {
       "county": "Baker",
-      "listing_rows": 0,
-      "status": "not_yet_ingested"
+      "listing_rows": 1,
+      "status": "listed_in_report"
     },
     {
       "county": "Clay",
-      "listing_rows": 0,
-      "status": "not_yet_ingested"
+      "listing_rows": 5,
+      "status": "listed_in_report"
     },
     {
       "county": "Duval",
-      "listing_rows": 0,
-      "status": "not_yet_ingested"
+      "listing_rows": 54,
+      "status": "listed_in_report"
     },
     {
       "county": "Nassau",
-      "listing_rows": 0,
-      "status": "not_yet_ingested"
+      "listing_rows": 2,
+      "status": "listed_in_report"
     },
     {
       "county": "St. Johns",
-      "listing_rows": 0,
-      "status": "not_yet_ingested"
+      "listing_rows": 8,
+      "status": "listed_in_report"
     }
   ],
-  "records": [],
-  "notes": "Official product-sorted report is not yet ingested; no installed systems implied."
+  "records": [
+    {
+      "county": "Baker",
+      "city": "Sanderson",
+      "entity_name": "A to Z Contracting and Plumbing, Inc",
+      "product": "Ecopod N-series",
+      "source_page": 14,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Clay",
+      "city": "Melrose",
+      "entity_name": "Crown Construction Company",
+      "product": "Fuji Clean USA Fuji Clean CE",
+      "source_page": 17,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Clay",
+      "city": "Middleburg",
+      "entity_name": "Champion Septic Inc",
+      "product": "Fuji Clean USA Fuji Clean CEN",
+      "source_page": 20,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Clay",
+      "city": "Melrose",
+      "entity_name": "Crown Construction Company",
+      "product": "Fuji Clean USA Fuji Clean CEN",
+      "source_page": 20,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Clay",
+      "city": "Green Cove Springs",
+      "entity_name": "R C Utilities",
+      "product": "Fuji Clean USA Fuji Clean CEN",
+      "source_page": 20,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Clay",
+      "city": "Melrose",
+      "entity_name": "Crown Construction Company",
+      "product": "Jet",
+      "source_page": 25,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "O'Connors Plumbing Company of Florida",
+      "product": "Aqua-Klear",
+      "source_page": 1,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Riverview Pump Well and Septic Tank Company Inc.",
+      "product": "Aqua-Klear",
+      "source_page": 2,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "BVD Septic, LLC",
+      "product": "Bio-Microbics MicroFAST",
+      "source_page": 3,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Presto Plumbing",
+      "product": "Bio-Microbics MicroFAST",
+      "source_page": 3,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Riverview Pump Well and Septic Tank Company Inc.",
+      "product": "Consolidated Multi-Flo",
+      "source_page": 6,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Riverview Pump Well and Septic Tank Company Inc.",
+      "product": "Consolidated Nayadic",
+      "source_page": 7,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Septic Specialists LLC",
+      "product": "Delta Enviro-Aire",
+      "source_page": 7,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Jax Plumbing & Septic Tank Inc",
+      "product": "Delta Whitewater",
+      "source_page": 10,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Lighthouse Building Services",
+      "product": "Delta Whitewater",
+      "source_page": 10,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Lighthouse Building Services LLC",
+      "product": "Delta Whitewater",
+      "source_page": 10,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "RiverCity Plumbing",
+      "product": "Delta Whitewater",
+      "source_page": 10,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Macclenny",
+      "entity_name": "Superior Septic Services Inc",
+      "product": "Delta Whitewater",
+      "source_page": 10,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Tom Hunter Inc",
+      "product": "Delta Whitewater",
+      "source_page": 10,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Plumbing By Josh Inc",
+      "product": "Earthtek EnviroFilter",
+      "source_page": 12,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Riverview Pump Well and Septic Tank Company Inc.",
+      "product": "Earthtek EnviroFilter",
+      "source_page": 12,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "C and T Underground",
+      "product": "Ecopod N-series",
+      "source_page": 14,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Pelagic Plumbing and Drains",
+      "product": "Ecopod N-series",
+      "source_page": 14,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "RiverCity Plumbing",
+      "product": "Ecopod N-series",
+      "source_page": 14,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Totally Hooked Plumbing and Drains",
+      "product": "Ecopod N-series",
+      "source_page": 14,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "AJ Morel Plumbing",
+      "product": "Fuji Clean USA Fuji Clean CE",
+      "source_page": 17,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Flamingo Services and Utilities LLC",
+      "product": "Fuji Clean USA Fuji Clean CE",
+      "source_page": 17,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Gable & Mackey, LLC",
+      "product": "Fuji Clean USA Fuji Clean CE",
+      "source_page": 17,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "J. Sweat Septic Services, LLC",
+      "product": "Fuji Clean USA Fuji Clean CE",
+      "source_page": 17,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Lighthouse Building Services LLC",
+      "product": "Fuji Clean USA Fuji Clean CE",
+      "source_page": 17,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Saint Augustine",
+      "entity_name": "Outhouse Septic Inc",
+      "product": "Fuji Clean USA Fuji Clean CE",
+      "source_page": 17,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "RiverCity Plumbing",
+      "product": "Fuji Clean USA Fuji Clean CE",
+      "source_page": 17,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Septic Specialists LLC",
+      "product": "Fuji Clean USA Fuji Clean CE",
+      "source_page": 17,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Southern Septic of North Florida",
+      "product": "Fuji Clean USA Fuji Clean CE",
+      "source_page": 17,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "AJ Morel Plumbing",
+      "product": "Fuji Clean USA Fuji Clean CEN",
+      "source_page": 20,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "C and T Underground",
+      "product": "Fuji Clean USA Fuji Clean CEN",
+      "source_page": 20,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Saint Augustine",
+      "entity_name": "East Coast Septic Services LLC",
+      "product": "Fuji Clean USA Fuji Clean CEN",
+      "source_page": 20,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "J. Sweat Septic Services, LLC",
+      "product": "Fuji Clean USA Fuji Clean CEN",
+      "source_page": 20,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "O'Connors Plumbing Company of Florida",
+      "product": "Fuji Clean USA Fuji Clean CEN",
+      "source_page": 20,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Tom Hunter Inc",
+      "product": "Fuji Clean USA Fuji Clean CEN",
+      "source_page": 20,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Plumbing By Josh Inc",
+      "product": "Hoot",
+      "source_page": 23,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Riverview Pump Well and Septic Tank Company Inc.",
+      "product": "Hoot",
+      "source_page": 23,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Southern Septic of North Florida",
+      "product": "Jet",
+      "source_page": 25,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Star Construction and Engineering Inc",
+      "product": "Jet",
+      "source_page": 25,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Riverview Pump Well and Septic Tank Company Inc.",
+      "product": "NoMound Onsite Systems No Mound",
+      "source_page": 25,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "BVD Septic, LLC",
+      "product": "Norweco Singulair",
+      "source_page": 26,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Duck Duck Rooter LLC",
+      "product": "Norweco Singulair",
+      "source_page": 26,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Flamingo Septic & Utilities",
+      "product": "Norweco Singulair",
+      "source_page": 26,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Flamingo Services and Utilities LLC",
+      "product": "Norweco Singulair",
+      "source_page": 26,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "J. Sweat Septic Services, LLC",
+      "product": "Norweco Singulair",
+      "source_page": 26,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Lighthouse Building Services LLC",
+      "product": "Norweco Singulair",
+      "source_page": 26,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Northeast Florida Septic LLC",
+      "product": "Norweco Singulair",
+      "source_page": 26,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "O'Connors Plumbing Company of Florida",
+      "product": "Norweco Singulair",
+      "source_page": 26,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Saint Augustine",
+      "entity_name": "Outhouse Septic Inc",
+      "product": "Norweco Singulair",
+      "source_page": 26,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Plumbing By Josh Inc",
+      "product": "Norweco Singulair",
+      "source_page": 26,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Presto Plumbing",
+      "product": "Norweco Singulair",
+      "source_page": 26,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "RiverCity Plumbing",
+      "product": "Norweco Singulair",
+      "source_page": 26,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Riverview Pump Well and Septic Tank Company Inc.",
+      "product": "Norweco Singulair",
+      "source_page": 26,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Jacksonville",
+      "entity_name": "Septic Specialists LLC",
+      "product": "Norweco Singulair",
+      "source_page": 26,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Duval",
+      "city": "Macclenny",
+      "entity_name": "Superior Septic Services Inc",
+      "product": "Norweco Singulair",
+      "source_page": 26,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Nassau",
+      "city": "Callahan",
+      "entity_name": "Daniel Hendricks Septic Services",
+      "product": "Fuji Clean USA Fuji Clean CE",
+      "source_page": 18,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "Nassau",
+      "city": "Callahan",
+      "entity_name": "Daniel Hendricks Septic Services",
+      "product": "Jet",
+      "source_page": 25,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "St. Johns",
+      "city": "Saint Augustine",
+      "entity_name": "BURNEY'S SEPTIC TANK SERVICE INC",
+      "product": "Aqua-Klear",
+      "source_page": 2,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "St. Johns",
+      "city": "Saint Augustine",
+      "entity_name": "BURNEY'S SEPTIC TANK SERVICE INC",
+      "product": "Delta Enviro-Aire",
+      "source_page": 9,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "St. Johns",
+      "city": "Saint Augustine",
+      "entity_name": "EAST COAST SEPTIC SERVICES LLC",
+      "product": "Fuji Clean USA Fuji Clean CE",
+      "source_page": 19,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "St. Johns",
+      "city": "Saint Augustine",
+      "entity_name": "Shugarts Plumbing LLC",
+      "product": "Fuji Clean USA Fuji Clean CE",
+      "source_page": 19,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "St. Johns",
+      "city": "Saint Augustine",
+      "entity_name": "BURNEY'S SEPTIC TANK SERVICE INC",
+      "product": "Fuji Clean USA Fuji Clean CEN",
+      "source_page": 22,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "St. Johns",
+      "city": "Saint Augustine",
+      "entity_name": "EAST COAST SEPTIC SERVICES LLC",
+      "product": "Fuji Clean USA Fuji Clean CEN",
+      "source_page": 22,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "St. Johns",
+      "city": "Saint Augustine",
+      "entity_name": "Shugarts Plumbing LLC",
+      "product": "Fuji Clean USA Fuji Clean CEN",
+      "source_page": 22,
+      "evidence": "official_product_sorted_maintenance_listing"
+    },
+    {
+      "county": "St. Johns",
+      "city": "Saint Augustine",
+      "entity_name": "MCDANIEL'S SAND & SEPTIC",
+      "product": "Norweco Singulair",
+      "source_page": 28,
+      "evidence": "official_product_sorted_maintenance_listing"
+    }
+  ],
+  "notes": "Product-sorted provider listing, no maintenance permit IDs. Business names are not deduplicated across permit jurisdictions and must not be used as installed-system evidence."
 }
