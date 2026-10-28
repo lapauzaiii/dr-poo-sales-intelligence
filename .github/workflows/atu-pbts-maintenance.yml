@@ -7,6 +7,8 @@ on:
     paths:
       - 'scripts/fetch_maintenance_entities.py'
       - 'scripts/validate_alpha.py'
+      - 'scripts/check_frontend.py'
+      - 'prototype/**'
       - 'tests/**'
       - '.github/workflows/atu-pbts-maintenance.yml'
 permissions:
@@ -31,6 +33,8 @@ jobs:
           fi
       - name: Run parser tests
         run: python -m unittest discover -s tests -v
+      - name: Check production frontend and JavaScript
+        run: python scripts/check_frontend.py
       - name: Fetch and parse official DEP maintenance entity report
         run: python scripts/fetch_maintenance_entities.py
       - name: Validate all public data and fail closed
