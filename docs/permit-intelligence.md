@@ -1,16 +1,9 @@
-# Permit intelligence MVP
-## Scope
-Duval, Clay, St. Johns, Nassau and Baker. Both competitor permit attribution and modeled revenue opportunity.
-## Current implementation
-- `prototype/intelligence.html`: responsive competitor activity, permit table, filters, synthetic rate-based ROI scenario.
-- `data/permit-intelligence.json`: 36 fabricated permit records. Explicit synthetic provenance.
-- `scripts/permit_pipeline.py`: normalization of an **explicitly supplied, authorized** JSON export. No uncontrolled scraping.
-- `.github/workflows/permit-intelligence.yml`: daily scheduled validation (12:17 UTC). **It does not retrieve live permits until a legally accessible, documented source is configured.**
-## Source onboarding
-For each county identify official export/API, permitted automation frequency, available contractor/permit/status fields, pagination, and update semantics. Normalize and deduplicate permit numbers; preserve evidence links and retrieval timestamps. Never confuse permit counts with actual completed jobs or routine pumping volume.
-## Public site policy
-Only publish limited, non-personal permit metadata where allowed; no names of owners, property addresses, phone numbers, customer notes, CRM credentials, or sales dispositions. Verify source licensing and privacy rules before enabling production publication.
-## ROI definition
-Modeled market value = sum of synthetic rate for each permit type. Potential captured revenue = modeled value × actionable share × capture rate. Scenario ROI = (potential captured revenue × contribution margin − campaign spend) / campaign spend. A competitor-associated permit is not necessarily actionable.
-## Future
-Replace synthetic rates with verified published Dr. Poo rate card (URL not yet supplied). Confirm source feeds and then implement automatic retrieval with integration tests, coverage reporting, and alerts on failed refreshes. No database or Jobber integration in this phase.
+# Retired permit intelligence concept
+
+The earlier synthetic permit, competitor-attribution and revenue-ROI prototype was retired on 2026-10-28. Its fabricated JSON fixture, daily synthetic validation workflow and fixture-dependent pipeline were removed from the current production tree. The compatibility page redirects to the evidence-only ATU/PBTS alpha.
+
+Current authoritative sources and status are documented in [ALPHA_RELEASE.md](ALPHA_RELEASE.md) and the [root README](../README.md). The application now ingests official historical septic aggregates, maintenance entity permits by county, and a newer product-sorted maintenance provider report.
+
+No construction-permit or installation-level ATU/PBTS feed has been authorized and validated. Consequently, verified installed equipment and sales opportunities remain empty. Any future permit ingestion must preserve source provenance, source dates, county, system category and explicit authorization, without publishing personal or property-level details to the public repository.
+
+Do not resurrect synthetic permit values or represent a maintenance authorization as an installed unit or available contract.
