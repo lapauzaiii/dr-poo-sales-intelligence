@@ -1,0 +1,38 @@
+{
+  "dataset": "fl_dep_maintenance_entities_by_product",
+  "data_type": "product_sorted_maintenance_permissions_not_installations",
+  "source_status": "pending_initial_ingestion",
+  "source_url": "https://floridadep.gov/sites/default/files/2026_0924_MEByProduct.pdf",
+  "report_date": null,
+  "retrieved_at": null,
+  "source_sha256": null,
+  "coverage": [
+    {
+      "county": "Baker",
+      "listing_rows": 0,
+      "status": "not_yet_ingested"
+    },
+    {
+      "county": "Clay",
+      "listing_rows": 0,
+      "status": "not_yet_ingested"
+    },
+    {
+      "county": "Duval",
+      "listing_rows": 0,
+      "status": "not_yet_ingested"
+    },
+    {
+      "county": "Nassau",
+      "listing_rows": 0,
+      "status": "not_yet_ingested"
+    },
+    {
+      "county": "St. Johns",
+      "listing_rows": 0,
+      "status": "not_yet_ingested"
+    }
+  ],
+  "records": [],
+  "notes": "Official product-sorted report is not yet ingested; no installed systems implied."
+}
