@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - 'scripts/fetch_maintenance_entities.py'
+      - 'scripts/fetch_product_maintenance.py'
       - 'scripts/validate_alpha.py'
       - 'scripts/check_frontend.py'
       - 'prototype/**'
@@ -39,13 +40,15 @@ jobs:
         run: python scripts/check_frontend.py
       - name: Fetch and parse official DEP maintenance entity report
         run: python scripts/fetch_maintenance_entities.py
+      - name: Fetch and parse newer official DEP product report
+        run: python scripts/fetch_product_maintenance.py
       - name: Validate all public data and fail closed
         run: python scripts/validate_alpha.py
       - name: Publish validated maintenance snapshot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/maintenance-entities.json
+          git add data/maintenance-entities.json data/maintenance-products.json
           if ! git diff --cached --quiet; then
             git commit -m "Refresh verified DEP maintenance entity permissions"
             for attempt in 1 2 3; do
