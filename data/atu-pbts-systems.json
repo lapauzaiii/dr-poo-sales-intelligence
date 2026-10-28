@@ -1,0 +1,13 @@
+{
+  "data_type": "verified_atu_pbts_installations",
+  "source_status": "no_verified_records_available",
+  "coverage": [
+    "Baker",
+    "Clay",
+    "Duval",
+    "Nassau",
+    "St. Johns"
+  ],
+  "records": [],
+  "notes": "No authorized installation-level ATU/PBTS permit feed has been verified. No inference from septic inventory or maintenance entity permissions."
+}
