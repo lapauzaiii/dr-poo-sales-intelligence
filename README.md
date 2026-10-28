@@ -4,16 +4,16 @@ Five-county Northeast Florida market intelligence for **Baker, Clay, Duval, Nass
 
 ## What is actually live
 
-- [ATU/PBTS intelligence](prototype/atu-pbts.html): official maintenance-entity permits by county and approved advanced-treatment product, with report dates, PDF page provenance, county/product filters, CSV export and source health.
+- [ATU/PBTS intelligence](prototype/atu-pbts.html): official maintenance-entity permits by county (March report) and a separate newer product-sorted provider listing (September report), with report dates, PDF page provenance, county/product filters, CSV export and source health.
 - [DEP septic inventory](prototype/inventory.html): grouped historical septic-likelihood records from Florida DEP ArcGIS, using independently verified Florida DOR `CO_NO` county codes.
 - [Official source coverage](data/equipment-source-validation.json): documented access limitations and data acquisition targets.
 - [Verified installed systems](data/atu-pbts-systems.json) and [evidence-backed opportunities](data/opportunities.json): **empty** until authorized, installation-level records are validated. An empty verified feed is correct, not a defect.
 
-The maintenance report is **not** an installation inventory. Maintenance permits identify providers permitted for specific products; they do not establish system counts, contract expirations or open sales opportunities. A source may be old even if the collector checked it today.
+The two maintenance reports are **not** installation inventories. Maintenance permits identify providers permitted for specific products; they do not establish system counts, contract expirations or open sales opportunities. A source may be old even if the collector checked it today.
 
 ## Automated workflows
 
-- [Official ATU/PBTS maintenance intelligence](.github/workflows/atu-pbts-maintenance.yml): daily fetch of the official Florida DEP county report, PDF parsing, unit tests, privacy and schema validation, fail-closed publication and GitHub Actions logs.
+- [Official ATU/PBTS maintenance intelligence](.github/workflows/atu-pbts-maintenance.yml): daily fetch of the official Florida DEP county and product reports, PDF parsing, unit tests, privacy and schema validation, fail-closed publication and GitHub Actions logs.
 - [Florida DEP septic inventory aggregates](.github/workflows/septic-inventory.yml): daily grouped ArcGIS fetch, source checks and validated snapshot commit.
 - Source failures fail the job and **do not overwrite the last validated file**. Inspect workflow logs and source-health dates before interpreting results.
 
