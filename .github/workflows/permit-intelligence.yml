@@ -1,0 +1,19 @@
+name: Daily permit intelligence validation
+on:
+  schedule:
+    - cron: '17 12 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate pipeline and preserve synthetic data until authorized source exists
+        run: python scripts/permit_pipeline.py
+      - name: Validate published data structure
+        run: python -m json.tool data/permit-intelligence.json > /dev/null
