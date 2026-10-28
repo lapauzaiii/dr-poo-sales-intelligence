@@ -41,6 +41,34 @@
       "type": "septic_permits",
       "status": "official_30_day_reports_confirmed_field_schema_pending",
       "notes": "Construction permits, construction approvals and final approvals are different events; none is a verified ATU inventory by itself."
+    },
+    {
+      "id": "dep-mars",
+      "url": "https://mars.floridadep.gov/",
+      "type": "atu_pbts_maintenance",
+      "status": "official_system_confirmed_public_export_not_verified",
+      "notes": "Contracts and maintenance activities recorded by permitted contractors; do not attempt unauthenticated scraping or claim public access."
+    },
+    {
+      "id": "dep-maintenance-entities-by-county",
+      "url": "https://floridadep.gov/water/onsite-sewage/documents/active-maintenance-entity-service-permits-county",
+      "type": "atu_pbts_maintenance_competitors",
+      "status": "official_report_confirmed",
+      "notes": "County-level permitted maintenance entities; not installed system counts. Report page dated April 2026."
+    },
+    {
+      "id": "dep-maintenance-entities-by-product",
+      "url": "https://floridadep.gov/water/onsite-sewage/documents/active-maintenance-entity-service-permits-product",
+      "type": "atu_pbts_product_coverage",
+      "status": "official_report_confirmed",
+      "notes": "Product-level permitted maintenance entities; report page dated September 2026."
+    },
+    {
+      "id": "dep-operating-application",
+      "url": "https://osp.floridadep.gov/",
+      "type": "atu_pbts_permit_categories",
+      "status": "official_application_categories_confirmed_no_public_feed",
+      "notes": "Operating application separately lists ATU, PBTS, commercial, industrial; application form is not a public record export."
     }
   ],
   "classification_policy": {
@@ -48,5 +76,12 @@
     "lift_station": "Require an explicitly identified sanitary wastewater lift station in an authorized utility/permit record; exclude stormwater and ordinary dosing tanks.",
     "unknown": "Never infer equipment from KnownSeptic, LikelySeptic, or SWLSeptic classes.",
     "publication": "No equipment counts until a verified local dataset and usage rights are established."
-  }
+  },
+  "priority": "ATU/PBTS only; lift stations deferred",
+  "next_actions": [
+    "Inspect county and product maintenance-entity PDF schemas and dates",
+    "Confirm permissible access to ATU/PBTS operating-permit records with five county health departments",
+    "Request authorized aggregate/export fields: permit identifier, county, system type, make/model, permit status and renewal date",
+    "Build verified-source ATU/PBTS registry with zero fabricated property or customer records"
+  ]
 }
