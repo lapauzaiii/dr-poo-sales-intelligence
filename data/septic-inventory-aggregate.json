@@ -1,0 +1,1014 @@
+{
+  "dataset": "florida_dep_septic_inventory_aggregates",
+  "data_type": "historical_septic_inventory_not_permits",
+  "source_url": "https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/SEPTIC_SYSTEMS/MapServer/0",
+  "retrieved_at": "2026-10-28T05:14:15.036192+00:00",
+  "county_code_mapping_verified": false,
+  "rows": [
+    {
+      "county_code": "11",
+      "septic_class": "KnownSeptic",
+      "count": 10365
+    },
+    {
+      "county_code": "11",
+      "septic_class": "LikelySeptic",
+      "count": 16587
+    },
+    {
+      "county_code": "11",
+      "septic_class": "SWLSeptic",
+      "count": 124
+    },
+    {
+      "county_code": "12",
+      "septic_class": "KnownSeptic",
+      "count": 1275
+    },
+    {
+      "county_code": "12",
+      "septic_class": "LikelySeptic",
+      "count": 4343
+    },
+    {
+      "county_code": "12",
+      "septic_class": "SWLSeptic",
+      "count": 296
+    },
+    {
+      "county_code": "13",
+      "septic_class": "KnownSeptic",
+      "count": 8311
+    },
+    {
+      "county_code": "13",
+      "septic_class": "LikelySeptic",
+      "count": 21266
+    },
+    {
+      "county_code": "13",
+      "septic_class": "SWLSeptic",
+      "count": 708
+    },
+    {
+      "county_code": "14",
+      "septic_class": "KnownSeptic",
+      "count": 2564
+    },
+    {
+      "county_code": "14",
+      "septic_class": "LikelySeptic",
+      "count": 4462
+    },
+    {
+      "county_code": "14",
+      "septic_class": "SWLSeptic",
+      "count": 515
+    },
+    {
+      "county_code": "15",
+      "septic_class": "KnownSeptic",
+      "count": 43452
+    },
+    {
+      "county_code": "15",
+      "septic_class": "LikelySeptic",
+      "count": 30319
+    },
+    {
+      "county_code": "15",
+      "septic_class": "SWLSeptic",
+      "count": 7596
+    },
+    {
+      "county_code": "16",
+      "septic_class": "KnownSeptic",
+      "count": 9665
+    },
+    {
+      "county_code": "16",
+      "septic_class": "LikelySeptic",
+      "count": 40953
+    },
+    {
+      "county_code": "16",
+      "septic_class": "SWLSeptic",
+      "count": 841
+    },
+    {
+      "county_code": "17",
+      "septic_class": "KnownSeptic",
+      "count": 1136
+    },
+    {
+      "county_code": "17",
+      "septic_class": "LikelySeptic",
+      "count": 383
+    },
+    {
+      "county_code": "17",
+      "septic_class": "SWLSeptic",
+      "count": 1585
+    },
+    {
+      "county_code": "18",
+      "septic_class": "KnownSeptic",
+      "count": 16936
+    },
+    {
+      "county_code": "18",
+      "septic_class": "LikelySeptic",
+      "count": 15946
+    },
+    {
+      "county_code": "18",
+      "septic_class": "SWLSeptic",
+      "count": 2367
+    },
+    {
+      "county_code": "19",
+      "septic_class": "KnownSeptic",
+      "count": 27756
+    },
+    {
+      "county_code": "19",
+      "septic_class": "LikelySeptic",
+      "count": 18882
+    },
+    {
+      "county_code": "19",
+      "septic_class": "SWLSeptic",
+      "count": 108
+    },
+    {
+      "county_code": "20",
+      "septic_class": "KnownSeptic",
+      "count": 8604
+    },
+    {
+      "county_code": "20",
+      "septic_class": "LikelySeptic",
+      "count": 8438
+    },
+    {
+      "county_code": "20",
+      "septic_class": "SWLSeptic",
+      "count": 4224
+    },
+    {
+      "county_code": "21",
+      "septic_class": "KnownSeptic",
+      "count": 14879
+    },
+    {
+      "county_code": "21",
+      "septic_class": "LikelySeptic",
+      "count": 13375
+    },
+    {
+      "county_code": "21",
+      "septic_class": "SWLSeptic",
+      "count": 325
+    },
+    {
+      "county_code": "22",
+      "septic_class": "KnownSeptic",
+      "count": 7337
+    },
+    {
+      "county_code": "22",
+      "septic_class": "LikelySeptic",
+      "count": 9402
+    },
+    {
+      "county_code": "22",
+      "septic_class": "SWLSeptic",
+      "count": 1678
+    },
+    {
+      "county_code": "23",
+      "septic_class": "KnownSeptic",
+      "count": 16152
+    },
+    {
+      "county_code": "23",
+      "septic_class": "LikelySeptic",
+      "count": 74103
+    },
+    {
+      "county_code": "23",
+      "septic_class": "SWLSeptic",
+      "count": 9458
+    },
+    {
+      "county_code": "24",
+      "septic_class": "KnownSeptic",
+      "count": 2668
+    },
+    {
+      "county_code": "24",
+      "septic_class": "LikelySeptic",
+      "count": 1144
+    },
+    {
+      "county_code": "24",
+      "septic_class": "SWLSeptic",
+      "count": 294
+    },
+    {
+      "county_code": "25",
+      "septic_class": "KnownSeptic",
+      "count": 1298
+    },
+    {
+      "county_code": "25",
+      "septic_class": "LikelySeptic",
+      "count": 5754
+    },
+    {
+      "county_code": "25",
+      "septic_class": "SWLSeptic",
+      "count": 254
+    },
+    {
+      "county_code": "26",
+      "septic_class": "KnownSeptic",
+      "count": 14356
+    },
+    {
+      "county_code": "26",
+      "septic_class": "LikelySeptic",
+      "count": 61038
+    },
+    {
+      "county_code": "26",
+      "septic_class": "SWLSeptic",
+      "count": 907
+    },
+    {
+      "county_code": "27",
+      "septic_class": "KnownSeptic",
+      "count": 16229
+    },
+    {
+      "county_code": "27",
+      "septic_class": "LikelySeptic",
+      "count": 9525
+    },
+    {
+      "county_code": "27",
+      "septic_class": "SWLSeptic",
+      "count": 2694
+    },
+    {
+      "county_code": "28",
+      "septic_class": "KnownSeptic",
+      "count": 2054
+    },
+    {
+      "county_code": "28",
+      "septic_class": "LikelySeptic",
+      "count": 1643
+    },
+    {
+      "county_code": "28",
+      "septic_class": "SWLSeptic",
+      "count": 316
+    },
+    {
+      "county_code": "29",
+      "septic_class": "KnownSeptic",
+      "count": 1678
+    },
+    {
+      "county_code": "29",
+      "septic_class": "LikelySeptic",
+      "count": 2559
+    },
+    {
+      "county_code": "29",
+      "septic_class": "SWLSeptic",
+      "count": 729
+    },
+    {
+      "county_code": "30",
+      "septic_class": "KnownSeptic",
+      "count": 3482
+    },
+    {
+      "county_code": "30",
+      "septic_class": "LikelySeptic",
+      "count": 7431
+    },
+    {
+      "county_code": "30",
+      "septic_class": "SWLSeptic",
+      "count": 694
+    },
+    {
+      "county_code": "31",
+      "septic_class": "KnownSeptic",
+      "count": 2316
+    },
+    {
+      "county_code": "31",
+      "septic_class": "LikelySeptic",
+      "count": 3479
+    },
+    {
+      "county_code": "31",
+      "septic_class": "SWLSeptic",
+      "count": 201
+    },
+    {
+      "county_code": "32",
+      "septic_class": "KnownSeptic",
+      "count": 908
+    },
+    {
+      "county_code": "32",
+      "septic_class": "LikelySeptic",
+      "count": 2650
+    },
+    {
+      "county_code": "32",
+      "septic_class": "SWLSeptic",
+      "count": 776
+    },
+    {
+      "county_code": "33",
+      "septic_class": "KnownSeptic",
+      "count": 1560
+    },
+    {
+      "county_code": "33",
+      "septic_class": "LikelySeptic",
+      "count": 2170
+    },
+    {
+      "county_code": "33",
+      "septic_class": "SWLSeptic",
+      "count": 193
+    },
+    {
+      "county_code": "34",
+      "septic_class": "KnownSeptic",
+      "count": 550
+    },
+    {
+      "county_code": "34",
+      "septic_class": "LikelySeptic",
+      "count": 1462
+    },
+    {
+      "county_code": "34",
+      "septic_class": "SWLSeptic",
+      "count": 660
+    },
+    {
+      "county_code": "35",
+      "septic_class": "KnownSeptic",
+      "count": 1523
+    },
+    {
+      "county_code": "35",
+      "septic_class": "LikelySeptic",
+      "count": 3295
+    },
+    {
+      "county_code": "35",
+      "septic_class": "SWLSeptic",
+      "count": 227
+    },
+    {
+      "county_code": "36",
+      "septic_class": "KnownSeptic",
+      "count": 3698
+    },
+    {
+      "county_code": "36",
+      "septic_class": "LikelySeptic",
+      "count": 6388
+    },
+    {
+      "county_code": "36",
+      "septic_class": "SWLSeptic",
+      "count": 448
+    },
+    {
+      "county_code": "37",
+      "septic_class": "KnownSeptic",
+      "count": 37526
+    },
+    {
+      "county_code": "37",
+      "septic_class": "LikelySeptic",
+      "count": 6801
+    },
+    {
+      "county_code": "37",
+      "septic_class": "SWLSeptic",
+      "count": 550
+    },
+    {
+      "county_code": "38",
+      "septic_class": "KnownSeptic",
+      "count": 10228
+    },
+    {
+      "county_code": "38",
+      "septic_class": "LikelySeptic",
+      "count": 19255
+    },
+    {
+      "county_code": "38",
+      "septic_class": "SWLSeptic",
+      "count": 1448
+    },
+    {
+      "county_code": "39",
+      "septic_class": "KnownSeptic",
+      "count": 21119
+    },
+    {
+      "county_code": "39",
+      "septic_class": "LikelySeptic",
+      "count": 25655
+    },
+    {
+      "county_code": "39",
+      "septic_class": "SWLSeptic",
+      "count": 4369
+    },
+    {
+      "county_code": "40",
+      "septic_class": "KnownSeptic",
+      "count": 1582
+    },
+    {
+      "county_code": "40",
+      "septic_class": "LikelySeptic",
+      "count": 4363
+    },
+    {
+      "county_code": "40",
+      "septic_class": "SWLSeptic",
+      "count": 272
+    },
+    {
+      "county_code": "41",
+      "septic_class": "KnownSeptic",
+      "count": 31245
+    },
+    {
+      "county_code": "41",
+      "septic_class": "LikelySeptic",
+      "count": 258
+    },
+    {
+      "county_code": "41",
+      "septic_class": "SWLSeptic",
+      "count": 42
+    },
+    {
+      "county_code": "42",
+      "septic_class": "KnownSeptic",
+      "count": 3258
+    },
+    {
+      "county_code": "42",
+      "septic_class": "LikelySeptic",
+      "count": 7936
+    },
+    {
+      "county_code": "42",
+      "septic_class": "SWLSeptic",
+      "count": 793
+    },
+    {
+      "county_code": "43",
+      "septic_class": "KnownSeptic",
+      "count": 947
+    },
+    {
+      "county_code": "43",
+      "septic_class": "LikelySeptic",
+      "count": 4125
+    },
+    {
+      "county_code": "43",
+      "septic_class": "SWLSeptic",
+      "count": 141
+    },
+    {
+      "county_code": "44",
+      "septic_class": "KnownSeptic",
+      "count": 410
+    },
+    {
+      "county_code": "44",
+      "septic_class": "LikelySeptic",
+      "count": 1668
+    },
+    {
+      "county_code": "44",
+      "septic_class": "SWLSeptic",
+      "count": 59
+    },
+    {
+      "county_code": "45",
+      "septic_class": "KnownSeptic",
+      "count": 29549
+    },
+    {
+      "county_code": "45",
+      "septic_class": "LikelySeptic",
+      "count": 37050
+    },
+    {
+      "county_code": "45",
+      "septic_class": "SWLSeptic",
+      "count": 2406
+    },
+    {
+      "county_code": "46",
+      "septic_class": "KnownSeptic",
+      "count": 55507
+    },
+    {
+      "county_code": "46",
+      "septic_class": "LikelySeptic",
+      "count": 33253
+    },
+    {
+      "county_code": "46",
+      "septic_class": "SWLSeptic",
+      "count": 5292
+    },
+    {
+      "county_code": "47",
+      "septic_class": "KnownSeptic",
+      "count": 22951
+    },
+    {
+      "county_code": "47",
+      "septic_class": "LikelySeptic",
+      "count": 7652
+    },
+    {
+      "county_code": "47",
+      "septic_class": "SWLSeptic",
+      "count": 39
+    },
+    {
+      "county_code": "48",
+      "septic_class": "KnownSeptic",
+      "count": 5016
+    },
+    {
+      "county_code": "48",
+      "septic_class": "LikelySeptic",
+      "count": 12047
+    },
+    {
+      "county_code": "48",
+      "septic_class": "SWLSeptic",
+      "count": 760
+    },
+    {
+      "county_code": "49",
+      "septic_class": "KnownSeptic",
+      "count": 315
+    },
+    {
+      "county_code": "49",
+      "septic_class": "LikelySeptic",
+      "count": 1559
+    },
+    {
+      "county_code": "49",
+      "septic_class": "SWLSeptic",
+      "count": 32
+    },
+    {
+      "county_code": "50",
+      "septic_class": "KnownSeptic",
+      "count": 1235
+    },
+    {
+      "county_code": "50",
+      "septic_class": "LikelySeptic",
+      "count": 4051
+    },
+    {
+      "county_code": "50",
+      "septic_class": "SWLSeptic",
+      "count": 295
+    },
+    {
+      "county_code": "51",
+      "septic_class": "KnownSeptic",
+      "count": 4968
+    },
+    {
+      "county_code": "51",
+      "septic_class": "LikelySeptic",
+      "count": 10612
+    },
+    {
+      "county_code": "51",
+      "septic_class": "SWLSeptic",
+      "count": 635
+    },
+    {
+      "county_code": "52",
+      "septic_class": "KnownSeptic",
+      "count": 92704
+    },
+    {
+      "county_code": "52",
+      "septic_class": "LikelySeptic",
+      "count": 5700
+    },
+    {
+      "county_code": "52",
+      "septic_class": "SWLSeptic",
+      "count": 1497
+    },
+    {
+      "county_code": "53",
+      "septic_class": "KnownSeptic",
+      "count": 17102
+    },
+    {
+      "county_code": "53",
+      "septic_class": "LikelySeptic",
+      "count": 3572
+    },
+    {
+      "county_code": "53",
+      "septic_class": "SWLSeptic",
+      "count": 2641
+    },
+    {
+      "county_code": "54",
+      "septic_class": "KnownSeptic",
+      "count": 50
+    },
+    {
+      "county_code": "54",
+      "septic_class": "LikelySeptic",
+      "count": 14108
+    },
+    {
+      "county_code": "54",
+      "septic_class": "SWLSeptic",
+      "count": 370
+    },
+    {
+      "county_code": "55",
+      "septic_class": "KnownSeptic",
+      "count": 16037
+    },
+    {
+      "county_code": "55",
+      "septic_class": "LikelySeptic",
+      "count": 273
+    },
+    {
+      "county_code": "55",
+      "septic_class": "SWLSeptic",
+      "count": 137
+    },
+    {
+      "county_code": "56",
+      "septic_class": "KnownSeptic",
+      "count": 7163
+    },
+    {
+      "county_code": "56",
+      "septic_class": "LikelySeptic",
+      "count": 6877
+    },
+    {
+      "county_code": "56",
+      "septic_class": "SWLSeptic",
+      "count": 295
+    },
+    {
+      "county_code": "57",
+      "septic_class": "KnownSeptic",
+      "count": 3493
+    },
+    {
+      "county_code": "57",
+      "septic_class": "LikelySeptic",
+      "count": 8447
+    },
+    {
+      "county_code": "57",
+      "septic_class": "SWLSeptic",
+      "count": 879
+    },
+    {
+      "county_code": "58",
+      "septic_class": "KnownSeptic",
+      "count": 36312
+    },
+    {
+      "county_code": "58",
+      "septic_class": "LikelySeptic",
+      "count": 50521
+    },
+    {
+      "county_code": "58",
+      "septic_class": "SWLSeptic",
+      "count": 4175
+    },
+    {
+      "county_code": "59",
+      "septic_class": "KnownSeptic",
+      "count": 8924
+    },
+    {
+      "county_code": "59",
+      "septic_class": "LikelySeptic",
+      "count": 12153
+    },
+    {
+      "county_code": "59",
+      "septic_class": "SWLSeptic",
+      "count": 1155
+    },
+    {
+      "county_code": "60",
+      "septic_class": "KnownSeptic",
+      "count": 24983
+    },
+    {
+      "county_code": "60",
+      "septic_class": "LikelySeptic",
+      "count": 31512
+    },
+    {
+      "county_code": "60",
+      "septic_class": "SWLSeptic",
+      "count": 2339
+    },
+    {
+      "county_code": "61",
+      "septic_class": "KnownSeptic",
+      "count": 19847
+    },
+    {
+      "county_code": "61",
+      "septic_class": "LikelySeptic",
+      "count": 45288
+    },
+    {
+      "county_code": "61",
+      "septic_class": "SWLSeptic",
+      "count": 8987
+    },
+    {
+      "county_code": "62",
+      "septic_class": "KnownSeptic",
+      "count": 3647
+    },
+    {
+      "county_code": "62",
+      "septic_class": "LikelySeptic",
+      "count": 7502
+    },
+    {
+      "county_code": "62",
+      "septic_class": "SWLSeptic",
+      "count": 1621
+    },
+    {
+      "county_code": "63",
+      "septic_class": "KnownSeptic",
+      "count": 40102
+    },
+    {
+      "county_code": "63",
+      "septic_class": "LikelySeptic",
+      "count": 55168
+    },
+    {
+      "county_code": "63",
+      "septic_class": "SWLSeptic",
+      "count": 9404
+    },
+    {
+      "county_code": "64",
+      "septic_class": "KnownSeptic",
+      "count": 8250
+    },
+    {
+      "county_code": "64",
+      "septic_class": "LikelySeptic",
+      "count": 19505
+    },
+    {
+      "county_code": "64",
+      "septic_class": "SWLSeptic",
+      "count": 955
+    },
+    {
+      "county_code": "65",
+      "septic_class": "KnownSeptic",
+      "count": 10660
+    },
+    {
+      "county_code": "65",
+      "septic_class": "LikelySeptic",
+      "count": 11227
+    },
+    {
+      "county_code": "65",
+      "septic_class": "SWLSeptic",
+      "count": 3052
+    },
+    {
+      "county_code": "66",
+      "septic_class": "KnownSeptic",
+      "count": 29977
+    },
+    {
+      "county_code": "66",
+      "septic_class": "LikelySeptic",
+      "count": 5925
+    },
+    {
+      "county_code": "66",
+      "septic_class": "SWLSeptic",
+      "count": 691
+    },
+    {
+      "county_code": "67",
+      "septic_class": "KnownSeptic",
+      "count": 14370
+    },
+    {
+      "county_code": "67",
+      "septic_class": "LikelySeptic",
+      "count": 14130
+    },
+    {
+      "county_code": "67",
+      "septic_class": "SWLSeptic",
+      "count": 4641
+    },
+    {
+      "county_code": "68",
+      "septic_class": "KnownSeptic",
+      "count": 11248
+    },
+    {
+      "county_code": "68",
+      "septic_class": "LikelySeptic",
+      "count": 24379
+    },
+    {
+      "county_code": "68",
+      "septic_class": "SWLSeptic",
+      "count": 49
+    },
+    {
+      "county_code": "69",
+      "septic_class": "KnownSeptic",
+      "count": 14531
+    },
+    {
+      "county_code": "69",
+      "septic_class": "LikelySeptic",
+      "count": 10075
+    },
+    {
+      "county_code": "69",
+      "septic_class": "SWLSeptic",
+      "count": 1769
+    },
+    {
+      "county_code": "70",
+      "septic_class": "KnownSeptic",
+      "count": 5302
+    },
+    {
+      "county_code": "70",
+      "septic_class": "LikelySeptic",
+      "count": 6913
+    },
+    {
+      "county_code": "70",
+      "septic_class": "SWLSeptic",
+      "count": 483
+    },
+    {
+      "county_code": "71",
+      "septic_class": "KnownSeptic",
+      "count": 4060
+    },
+    {
+      "county_code": "71",
+      "septic_class": "LikelySeptic",
+      "count": 6757
+    },
+    {
+      "county_code": "71",
+      "septic_class": "SWLSeptic",
+      "count": 849
+    },
+    {
+      "county_code": "72",
+      "septic_class": "KnownSeptic",
+      "count": 1004
+    },
+    {
+      "county_code": "72",
+      "septic_class": "LikelySeptic",
+      "count": 6734
+    },
+    {
+      "county_code": "72",
+      "septic_class": "SWLSeptic",
+      "count": 864
+    },
+    {
+      "county_code": "73",
+      "septic_class": "KnownSeptic",
+      "count": 1340
+    },
+    {
+      "county_code": "73",
+      "septic_class": "LikelySeptic",
+      "count": 1999
+    },
+    {
+      "county_code": "73",
+      "septic_class": "SWLSeptic",
+      "count": 145
+    },
+    {
+      "county_code": "74",
+      "septic_class": "KnownSeptic",
+      "count": 40023
+    },
+    {
+      "county_code": "74",
+      "septic_class": "LikelySeptic",
+      "count": 48124
+    },
+    {
+      "county_code": "74",
+      "septic_class": "SWLSeptic",
+      "count": 414
+    },
+    {
+      "county_code": "75",
+      "septic_class": "KnownSeptic",
+      "count": 4346
+    },
+    {
+      "county_code": "75",
+      "septic_class": "LikelySeptic",
+      "count": 5859
+    },
+    {
+      "county_code": "75",
+      "septic_class": "SWLSeptic",
+      "count": 76
+    },
+    {
+      "county_code": "76",
+      "septic_class": "KnownSeptic",
+      "count": 3336
+    },
+    {
+      "county_code": "76",
+      "septic_class": "LikelySeptic",
+      "count": 10905
+    },
+    {
+      "county_code": "76",
+      "septic_class": "SWLSeptic",
+      "count": 6248
+    },
+    {
+      "county_code": "77",
+      "septic_class": "KnownSeptic",
+      "count": 2771
+    },
+    {
+      "county_code": "77",
+      "septic_class": "LikelySeptic",
+      "count": 4916
+    },
+    {
+      "county_code": "77",
+      "septic_class": "SWLSeptic",
+      "count": 206
+    }
+  ]
+}
