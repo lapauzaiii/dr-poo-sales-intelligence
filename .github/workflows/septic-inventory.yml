@@ -20,6 +20,8 @@ jobs:
         run: python scripts/fetch_septic_inventory.py
       - name: Validate aggregate output
         run: python -m json.tool data/septic-inventory-aggregate.json > /dev/null
+      - name: Validate source schemas and evidence-only publication
+        run: python scripts/validate_alpha.py
       - name: Commit verified snapshot only if changed
         run: |
           git config user.name "github-actions[bot]"
