@@ -1,6 +1,6 @@
 # Dr. Poo Sales Intelligence: evidence-first ATU/PBTS alpha
 
-Five-county Northeast Florida market intelligence for **Baker, Clay, Duval, Nassau and St. Johns**. The production UI is static and served through Cloudflare Pages; the project uses no database or paid API.
+Five-county Northeast Florida market intelligence for **Baker, Clay, Duval, Nassau and St. Johns**. The production UI is static and served through Cloudflare Pages; the project uses no database or paid API. Pages runs `python3 scripts/build_static.py` and serves only the allowlisted `dist/` output, not repository scripts, tests or historical fixtures.
 
 ## What is actually live
 
