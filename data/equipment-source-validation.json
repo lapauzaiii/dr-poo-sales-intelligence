@@ -1,0 +1,52 @@
+{
+  "validated_on": "2026-10-27",
+  "purpose": "Source discovery for ATU/PBTS and wastewater lift-station evidence in five Northeast Florida counties",
+  "sources": [
+    {
+      "id": "fl-ostds-operating",
+      "url": "https://www.floridahealth.gov/community-environmental-public-health/environmental-public-health/water-quality/septic-systems/",
+      "coverage": "Baker Clay Duval Nassau St. Johns",
+      "type": "atu_pbts",
+      "status": "official_policy_verified_record_feed_not_found",
+      "notes": "ATU and PBTS require operating permits; county health departments retain local permitting in these five counties."
+    },
+    {
+      "id": "fl-dep-maintenance",
+      "url": "https://floridadep.gov/water/onsite-sewage/content/product-listings-and-approval-requirements",
+      "coverage": "statewide",
+      "type": "atu_pbts",
+      "status": "official_maintenance_entity_lookup_confirmed",
+      "notes": "DEP lists advanced-system permitted maintenance entities by product and by county/company; not proof of a particular installed unit."
+    },
+    {
+      "id": "fl-dep-wafr",
+      "url": "https://floridadep.gov/water/domestic-wastewater/content/wastewater-facility-information",
+      "coverage": "statewide",
+      "type": "wastewater_facility",
+      "status": "official_nightly_downloads_confirmed_schema_pending",
+      "notes": "County-sorted wastewater facility worksheets updated nightly; facility record is not itself proof of a lift station."
+    },
+    {
+      "id": "st-johns-gis",
+      "url": "https://www.sjcfl.us/departments/gis/",
+      "coverage": "St. Johns",
+      "type": "lift_station",
+      "status": "official_gis_portal_confirmed_lift_layer_pending",
+      "notes": "Official county GIS portal includes utility address request referencing lift stations; no verified bulk lift-station layer yet."
+    },
+    {
+      "id": "fl-dep-permits",
+      "url": "https://floridadep.gov/water/onsite-sewage/content/onsite-sewage-data",
+      "coverage": "statewide",
+      "type": "septic_permits",
+      "status": "official_30_day_reports_confirmed_field_schema_pending",
+      "notes": "Construction permits, construction approvals and final approvals are different events; none is a verified ATU inventory by itself."
+    }
+  ],
+  "classification_policy": {
+    "atu_pbts": "Require an operating permit, official system type or explicit model tied to a specific record.",
+    "lift_station": "Require an explicitly identified sanitary wastewater lift station in an authorized utility/permit record; exclude stormwater and ordinary dosing tanks.",
+    "unknown": "Never infer equipment from KnownSeptic, LikelySeptic, or SWLSeptic classes.",
+    "publication": "No equipment counts until a verified local dataset and usage rights are established."
+  }
+}
