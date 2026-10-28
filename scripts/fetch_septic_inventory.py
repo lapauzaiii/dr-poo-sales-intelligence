@@ -60,7 +60,7 @@ def fetch():
 def main():
     data = fetch()
     OUTPUT.parent.mkdir(parents=True,exist_ok=True)
-    OUTPUT.write_text(json.dumps(data,indent=2)+"\\n")
+    OUTPUT.write_text(json.dumps(data, indent=2) + chr(10), encoding="utf-8")
     print("Fetched",len(data["rows"]),"county/certainty aggregates")
 
 if __name__ == "__main__":
