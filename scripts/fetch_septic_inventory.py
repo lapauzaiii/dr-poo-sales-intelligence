@@ -2,7 +2,7 @@
 """Fetch public Florida DEP septic inventory aggregates (NOT recent permit filings).
 
 Only group counts are saved. Never persist individual points, addresses, parcel
-numbers, or applicant details. County-code mapping is intentionally not assumed.
+numbers, or applicant details. CO_NO uses Florida DOR county codes, verified against the DOH FLWMI ArcGIS coded-value domain.
 """
 import datetime
 import json
@@ -53,7 +53,7 @@ def fetch():
         "data_type": "historical_septic_inventory_not_permits",
         "source_url": ENDPOINT.rsplit("/query",1)[0],
         "retrieved_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        "county_code_mapping_verified": False,
+        "county_code_mapping_verified": True,\n        "county_code_system": "Florida Department of Revenue (CO_NO)",\n        "county_mapping_source": "https://maps.floridahealth.gov/server/rest/services/FLWMI/FLWMI_Wastewater/MapServer/0",
         "rows": sorted(rows,key=lambda x:(x["county_code"] or "",x["septic_class"] or "")),
     }
 
