@@ -3,7 +3,7 @@
   "data_type": "historical_septic_inventory_not_permits",
   "source_url": "https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/SEPTIC_SYSTEMS/MapServer/0",
   "retrieved_at": "2026-10-28T05:14:15.036192+00:00",
-  "county_code_mapping_verified": false,
+  "county_code_mapping_verified": true,
   "rows": [
     {
       "county_code": "11",
@@ -1010,5 +1010,7 @@
       "septic_class": "SWLSeptic",
       "count": 206
     }
-  ]
+  ],
+  "county_code_system": "Florida Department of Revenue (CO_NO)",
+  "county_mapping_source": "https://maps.floridahealth.gov/server/rest/services/FLWMI/FLWMI_Wastewater/MapServer/0"
 }
