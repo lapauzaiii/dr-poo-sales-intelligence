@@ -123,6 +123,7 @@ def build(pdf: bytes, retrieved_at: str) -> dict:
     return {
         "dataset": "fl_dep_maintenance_entity_service_permits_by_county",
         "data_type": "maintenance_entity_permissions_not_installed_systems",
+        "source_status": "verified_report_extraction",
         "source_url": REPORT_URL,
         "report_date": report_date,
         "retrieved_at": retrieved_at,
