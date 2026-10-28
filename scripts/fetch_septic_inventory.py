@@ -35,12 +35,14 @@ def fetch():
     rows = []
     for feature in features:
         a = feature.get("attributes", {})
-        county = str(a.get("CO_NO") or "").strip()
-        certainty = str(a.get("WW") or "").strip()
-        count = a.get("record_count")
-        if not county or not certainty or not isinstance(count, int) or count < 0:
-            raise ValueError("Unexpected ArcGIS grouped feature schema")
-        rows.append({"county_code":county,"septic_class":certainty,"count":count})
+        if not isinstance(a, dict) or "CO_NO" not in a or "WW" not in a or "record_count" not in a:
+            raise ValueError("ArcGIS missing expected fields: " + repr(a))
+        county = str(a["CO_NO"]).strip() if a["CO_NO"] is not None else None
+        certainty = str(a["WW"]).strip() if a["WW"] is not None else None
+        count = a["record_count"]
+        if not isinstance(count, int) or isinstance(count, bool) or count < 0:
+            raise ValueError("ArcGIS invalid aggregate count: " + repr(a))
+        rows.append({"county_code":county or None,"septic_class":certainty or None,"count":count})
     if len(rows) >= 2000:
         raise ValueError("ArcGIS may have truncated results; refusing incomplete snapshot")
     return {
@@ -49,7 +51,7 @@ def fetch():
         "source_url": ENDPOINT.rsplit("/query",1)[0],
         "retrieved_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "county_code_mapping_verified": False,
-        "rows": sorted(rows,key=lambda x:(x["county_code"],x["septic_class"])),
+        "rows": sorted(rows,key=lambda x:(x["county_code"] or "",x["septic_class"] or "")),
     }
 
 def main():
