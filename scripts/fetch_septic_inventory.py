@@ -35,11 +35,14 @@ def fetch():
     rows = []
     for feature in features:
         a = feature.get("attributes", {})
-        if not isinstance(a, dict) or "CO_NO" not in a or "WW" not in a or "record_count" not in a:
+        if not isinstance(a, dict):
+            raise ValueError("ArcGIS feature attributes must be an object")
+        fields = {str(key).casefold(): value for key, value in a.items()}
+        if not {"co_no", "ww", "record_count"}.issubset(fields):
             raise ValueError("ArcGIS missing expected fields: " + repr(a))
-        county = str(a["CO_NO"]).strip() if a["CO_NO"] is not None else None
-        certainty = str(a["WW"]).strip() if a["WW"] is not None else None
-        count = a["record_count"]
+        county = str(fields["co_no"]).strip() if fields["co_no"] is not None else None
+        certainty = str(fields["ww"]).strip() if fields["ww"] is not None else None
+        count = fields["record_count"]
         if not isinstance(count, int) or isinstance(count, bool) or count < 0:
             raise ValueError("ArcGIS invalid aggregate count: " + repr(a))
         rows.append({"county_code":county or None,"septic_class":certainty or None,"count":count})
