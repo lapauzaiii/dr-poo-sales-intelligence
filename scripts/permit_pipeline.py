@@ -29,7 +29,7 @@ def main():
     if not isinstance(rows,list):raise ValueError("Input must be a JSON array")
     cleaned={r["id"]:r for item in rows if isinstance(item,dict) if (r:=normalize(item))}
     existing=json.loads((ROOT/"data"/"permit-intelligence.json").read_text())
-    out={"mode":"public_permit_aggregates","generated_at":datetime.datetime.now(datetime.timezone.utc).isoformat(),"source_status":"authorized_export","source_notes":"Permit records normalized from explicitly supplied authorized export. Only limited non-personal fields published.","rates":existing["rates"],"permits":sorted(cleaned.values(),key=lambda r:r["filed_at"],reverse=True)}
+    out={"mode":"public_permit_aggregates","generated_at":datetime.datetime.now(datetime.timezone.utc).isoformat(),"source_status":"authorized_export","source_notes":"Permit records normalized from explicitly supplied authorized export. Only limited non-personal fields published.","rates":existing["rates"],"published_rate_card":existing.get("published_rate_card"),"pricing_source":existing.get("pricing_source"),"pricing_verified_on":existing.get("pricing_verified_on"),"permits":sorted(cleaned.values(),key=lambda r:r["filed_at"],reverse=True)}
     args.output.parent.mkdir(parents=True,exist_ok=True)
     args.output.write_text(json.dumps(out,indent=2)+"\n")
     print("Normalized",len(cleaned),"records")
