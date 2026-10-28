@@ -1,0 +1,46 @@
+name: Official ATU PBTS maintenance intelligence
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '07 12 * * *'
+  push:
+    paths:
+      - 'scripts/fetch_maintenance_entities.py'
+      - 'scripts/validate_alpha.py'
+      - 'tests/**'
+      - '.github/workflows/atu-pbts-maintenance.yml'
+permissions:
+  contents: write
+concurrency:
+  group: official-atu-maintenance
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF text extraction
+        run: |
+          if ! command -v pdftotext >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y poppler-utils
+          fi
+      - name: Run parser tests
+        run: python -m unittest discover -s tests -v
+      - name: Fetch and parse official DEP maintenance entity report
+        run: python scripts/fetch_maintenance_entities.py
+      - name: Validate all public data and fail closed
+        run: python scripts/validate_alpha.py
+      - name: Publish validated maintenance snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/maintenance-entities.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh verified DEP maintenance entity permissions"
+            git push
+          fi
