@@ -69,8 +69,8 @@ class InventoryPublicationTests(unittest.TestCase):
             path = Path(directory)
             existing = path / "inventory.json"
             incoming = path / "candidate.json"
-            existing.write_text(json.dumps(snapshot("2026-10-28T11:00:00Z")))
-            incoming.write_text(json.dumps(snapshot("2026-10-28T10:00:00Z")))
+            existing.write_text(json.dumps(snapshot("2026-10-27T11:00:00Z")))
+            incoming.write_text(json.dumps(snapshot("2026-10-27T10:00:00Z")))
             before = existing.read_bytes()
             self.assertFalse(publish(incoming, existing))
             self.assertEqual(existing.read_bytes(), before)
