@@ -1,5 +1,5 @@
 {
-  "validated_on": "2026-10-27",
+  "validated_on": "2026-10-28",
   "purpose": "Source discovery for ATU/PBTS and wastewater lift-station evidence in five Northeast Florida counties",
   "sources": [
     {
@@ -53,15 +53,21 @@
       "id": "dep-maintenance-entities-by-county",
       "url": "https://floridadep.gov/water/onsite-sewage/documents/active-maintenance-entity-service-permits-county",
       "type": "atu_pbts_maintenance_competitors",
-      "status": "official_report_confirmed",
-      "notes": "County-level permitted maintenance entities; not installed system counts. Report page dated April 2026."
+      "status": "automated_ingestion_verified",
+      "notes": "Machine-parsed and schema-validated 31 maintenance permit records with page provenance; source report is aging and not installation evidence.",
+      "report_url": "https://floridadep.gov/sites/default/files/2026_0331_MEByCounty_1.pdf",
+      "report_date": "2026-03-31",
+      "extracted_territory_permits": 31
     },
     {
       "id": "dep-maintenance-entities-by-product",
       "url": "https://floridadep.gov/water/onsite-sewage/documents/active-maintenance-entity-service-permits-product",
       "type": "atu_pbts_product_coverage",
-      "status": "official_report_confirmed",
-      "notes": "Product-level permitted maintenance entities; report page dated September 2026."
+      "status": "automated_ingestion_verified",
+      "notes": "Machine-parsed and schema-validated 70 county/product/business rows with page provenance; no permit IDs, not automatically joined to county report or installations.",
+      "report_url": "https://floridadep.gov/sites/default/files/2026_0924_MEByProduct.pdf",
+      "report_date": "2026-09-15",
+      "extracted_territory_listing_rows": 70
     },
     {
       "id": "dep-operating-application",
@@ -79,9 +85,9 @@
   },
   "priority": "ATU/PBTS only; lift stations deferred",
   "next_actions": [
-    "Inspect county and product maintenance-entity PDF schemas and dates",
-    "Confirm permissible access to ATU/PBTS operating-permit records with five county health departments",
-    "Request authorized aggregate/export fields: permit identifier, county, system type, make/model, permit status and renewal date",
-    "Build verified-source ATU/PBTS registry with zero fabricated property or customer records"
+    "Reconcile business aliases and product spelling differences between March county and September product reports without claiming new contracts",
+    "Request authorized ATU/PBTS operating-permit exports for Baker, Clay, Duval, Nassau and St. Johns",
+    "Require permit-level equipment evidence and commercial reuse authorization before populating verified systems or opportunities",
+    "Review Cloudflare Access team membership and preview-domain protection before broader use"
   ]
 }
