@@ -2,37 +2,382 @@
   "dataset": "fl_dep_maintenance_entity_service_permits_by_county",
   "data_type": "maintenance_entity_permissions_not_installed_systems",
   "source_url": "https://floridadep.gov/sites/default/files/2026_0331_MEByCounty_1.pdf",
-  "source_status": "pending_initial_ingestion",
-  "report_date": null,
-  "retrieved_at": null,
-  "source_sha256": null,
+  "report_date": "2026-03-31",
+  "retrieved_at": "2026-10-28T05:33:18.701528+00:00",
+  "source_sha256": "f5320e7cc683cdf5da16e1789ca6dcd1e968bde1967aae4a812db79fb533f5c1",
   "coverage": [
     {
       "county": "Baker",
       "listed_permits": 0,
-      "status": "not_yet_ingested_not_zero_installations"
+      "status": "not_listed_in_this_report_not_zero_installations"
     },
     {
       "county": "Clay",
-      "listed_permits": 0,
-      "status": "not_yet_ingested_not_zero_installations"
+      "listed_permits": 3,
+      "status": "listed_in_report"
     },
     {
       "county": "Duval",
-      "listed_permits": 0,
-      "status": "not_yet_ingested_not_zero_installations"
+      "listed_permits": 23,
+      "status": "listed_in_report"
     },
     {
       "county": "Nassau",
       "listed_permits": 0,
-      "status": "not_yet_ingested_not_zero_installations"
+      "status": "not_listed_in_this_report_not_zero_installations"
     },
     {
       "county": "St. Johns",
-      "listed_permits": 0,
-      "status": "not_yet_ingested_not_zero_installations"
+      "listed_permits": 5,
+      "status": "listed_in_report"
     }
   ],
-  "records": [],
-  "privacy": "No addresses, telephone numbers, owners, or installations."
+  "records": [
+    {
+      "permit_id": "10-QC-2901317",
+      "county": "Clay",
+      "entity_name": "Crown Construction Company",
+      "products": [
+        "Fuji Clean USA Fuji Clean CE",
+        "Fuji Clean USA Fuji Clean CEN",
+        "Jet"
+      ],
+      "source_page": 10,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "10-QC-3079910",
+      "county": "Clay",
+      "entity_name": "Champion Septic Inc",
+      "products": [
+        "Fuji Clean USA Fuji Clean CEN"
+      ],
+      "source_page": 11,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "10-QC-3085145",
+      "county": "Clay",
+      "entity_name": "R C Utilities",
+      "products": [
+        "Fuji Clean USA Fuji Clean CEN"
+      ],
+      "source_page": 11,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-00387",
+      "county": "Duval",
+      "entity_name": "Riverview Pump Well and Septic Tank Company Inc.",
+      "products": [
+        "Aqua-Klear",
+        "Consolidated Multi-Flo",
+        "Consolidated Nayadic",
+        "Earthtek EnviroFilter",
+        "Hoot",
+        "NoMound Onsite Systems No Mound",
+        "Norweco Singulair"
+      ],
+      "source_page": 15,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-1630586",
+      "county": "Duval",
+      "entity_name": "BVD Septic, LLC",
+      "products": [
+        "Bio-Microbics MicroFast",
+        "Norweco Singulair"
+      ],
+      "source_page": 16,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-2045510",
+      "county": "Duval",
+      "entity_name": "Duck Duck Rooter LLC",
+      "products": [
+        "Norweco Singulair"
+      ],
+      "source_page": 16,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-2055717",
+      "county": "Duval",
+      "entity_name": "Superior Septic Services Inc",
+      "products": [
+        "Delta Whitewater",
+        "Norweco Singulair"
+      ],
+      "source_page": 16,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-2093829",
+      "county": "Duval",
+      "entity_name": "Gable & Mackey, LLC",
+      "products": [
+        "Fuji Clean USA Fuji Clean CE"
+      ],
+      "source_page": 16,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-2094126",
+      "county": "Duval",
+      "entity_name": "Tom Hunter Inc",
+      "products": [
+        "Delta Whitewater",
+        "Fuji Clean USA Fuji Clean CEN"
+      ],
+      "source_page": 16,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-2316551",
+      "county": "Duval",
+      "entity_name": "Flamingo Septic & Utilities",
+      "products": [
+        "Norweco Singulair"
+      ],
+      "source_page": 16,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-2708408",
+      "county": "Duval",
+      "entity_name": "J. Sweat Septic Services, LLC",
+      "products": [
+        "Fuji Clean USA Fuji Clean CE",
+        "Fuji Clean USA Fuji Clean CEN",
+        "Norweco Singulair"
+      ],
+      "source_page": 17,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-2782903",
+      "county": "Duval",
+      "entity_name": "Lighthouse Building Services",
+      "products": [
+        "Delta Whitewater"
+      ],
+      "source_page": 17,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-2830108",
+      "county": "Duval",
+      "entity_name": "Jax Plumbing & Septic Tank Inc",
+      "products": [
+        "Delta Whitewater"
+      ],
+      "source_page": 17,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-3068381",
+      "county": "Duval",
+      "entity_name": "East Coast Septic Services LLC",
+      "products": [
+        "Fuji Clean USA Fuji Clean CEN"
+      ],
+      "source_page": 17,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-3068417",
+      "county": "Duval",
+      "entity_name": "O'Connors Plumbing Company of Florida",
+      "products": [
+        "Aqua-Klear",
+        "Fuji Clean USA Fuji Clean CEN",
+        "Norweco Singulair"
+      ],
+      "source_page": 17,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-3082768",
+      "county": "Duval",
+      "entity_name": "Southern Septic of North Florida",
+      "products": [
+        "Fuji Clean USA Fuji Clean CE",
+        "Jet"
+      ],
+      "source_page": 17,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-3091621",
+      "county": "Duval",
+      "entity_name": "Northeast Florida Septic LLC",
+      "products": [
+        "Norweco Singulair"
+      ],
+      "source_page": 17,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-3095608",
+      "county": "Duval",
+      "entity_name": "Star Construction and Engineering Inc",
+      "products": [
+        "Jet"
+      ],
+      "source_page": 18,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-3101058",
+      "county": "Duval",
+      "entity_name": "Lighthouse Building Services LLC",
+      "products": [
+        "Delta Whitewater",
+        "Fuji Clean USA Fuji Clean CE",
+        "Norweco Singulair"
+      ],
+      "source_page": 18,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-3137513",
+      "county": "Duval",
+      "entity_name": "Septic Specialists LLC",
+      "products": [
+        "Delta Enviro-Aire",
+        "Fuji Clean USA Fuji Clean CE",
+        "Norweco Singulair"
+      ],
+      "source_page": 18,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-3144029",
+      "county": "Duval",
+      "entity_name": "Flamingo Services and Utilities LLC",
+      "products": [
+        "Fuji Clean USA Fuji Clean CE",
+        "Norweco Singulair"
+      ],
+      "source_page": 18,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-4042132",
+      "county": "Duval",
+      "entity_name": "AJ Morel Plumbing",
+      "products": [
+        "Fuji Clean USA Fuji Clean CE",
+        "Fuji Clean USA Fuji Clean CEN"
+      ],
+      "source_page": 18,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-4065606",
+      "county": "Duval",
+      "entity_name": "Septic Specialists LLC",
+      "products": [
+        "Delta Enviro-Aire",
+        "Fuji Clean USA Fuji Clean CE",
+        "Norweco Singulair"
+      ],
+      "source_page": 18,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-4077480",
+      "county": "Duval",
+      "entity_name": "Presto Plumbing",
+      "products": [
+        "Bio-Microbics Micro-FAST",
+        "Norweco Singulair"
+      ],
+      "source_page": 18,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-4086242",
+      "county": "Duval",
+      "entity_name": "RiverCity Plumbing",
+      "products": [
+        "Delta Whitewater",
+        "Ecopod N-series",
+        "Fuji Clean USA Fuji Clean CE",
+        "Norweco Singulair"
+      ],
+      "source_page": 19,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "16-QJ-966329",
+      "county": "Duval",
+      "entity_name": "Plumbing By Josh Inc",
+      "products": [
+        "Earthtek EnviroFilter",
+        "Hoot",
+        "Norweco Singulair"
+      ],
+      "source_page": 19,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "55-QS-00039",
+      "county": "St. Johns",
+      "entity_name": "BURNEY'S SEPTIC TANK SERVICE INC",
+      "products": [
+        "Aqua-Klear",
+        "Delta Enviro-Aire",
+        "Fuji Clean USA Fuji Clean CEN"
+      ],
+      "source_page": 66,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "55-QS-1120733",
+      "county": "St. Johns",
+      "entity_name": "EAST COAST SEPTIC SERVICES LLC",
+      "products": [
+        "Fuji Clean USA Fuji Clean CE",
+        "Fuji Clean USA Fuji Clean CEN"
+      ],
+      "source_page": 66,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "55-QS-1767103",
+      "county": "St. Johns",
+      "entity_name": "East Coast Septic Services LLC",
+      "products": [
+        "Fuji Clean USA Fuji Clean CE",
+        "Fuji Clean USA Fuji Clean CEN"
+      ],
+      "source_page": 66,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "55-QS-4002581",
+      "county": "St. Johns",
+      "entity_name": "Shugarts Plumbing LLC",
+      "products": [
+        "Fuji Clean USA Fuji Clean CE",
+        "Fuji Clean USA Fuji Clean CEN"
+      ],
+      "source_page": 66,
+      "evidence": "official_maintenance_entity_service_permit"
+    },
+    {
+      "permit_id": "55-QS-947896",
+      "county": "St. Johns",
+      "entity_name": "MCDANIEL'S SAND & SEPTIC",
+      "products": [
+        "Norweco Singulair"
+      ],
+      "source_page": 66,
+      "evidence": "official_maintenance_entity_service_permit"
+    }
+  ],
+  "privacy": "Only public business names, maintenance permit IDs, and approved product names; no addresses, phone numbers, owners or installations."
 }
