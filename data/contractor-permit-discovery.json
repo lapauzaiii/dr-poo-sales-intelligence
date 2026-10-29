@@ -1,0 +1,49 @@
+{
+  "data_type": "third_party_contractor_permit_discovery_not_official_verification",
+  "as_of": "2026-10-28",
+  "contractor": {
+    "name": "Dr. Poo Sanitation Solutions, LLC",
+    "registration": "SR0991401",
+    "business_authorization": "SA0252276",
+    "identity_evidence": [
+      {
+        "label": "Official company website",
+        "url": "https://trustdrpoo.com/contact-us/"
+      },
+      {
+        "label": "Florida corporate registration",
+        "url": "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?aggregateId=flal-l10000066379-99199a61-166d-49ff-84bb-556f3779ce61&directionType=Initial&inquirytype=EntityName&listNameOrder=DRPOOLSMIAMI+L250003192910&searchNameOrder=DRPOOSANITATIONSOLUTIONS+L100000663791&searchTerm=Dr.+Pools+Of+Miami+Corp."
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "county": "Duval",
+      "permit_reference": "PR2403651",
+      "activity": "OSTDS Repair",
+      "location": "Jacksonville",
+      "source_url": "https://findmyseptic.com/county/duval",
+      "verification": "third_party_unverified",
+      "official_status": null
+    },
+    {
+      "county": "Duval",
+      "permit_reference": "PR2403361",
+      "activity": "OSTDS Repair",
+      "location": "Jacksonville",
+      "source_url": "https://findmyseptic.com/county/duval",
+      "verification": "third_party_unverified",
+      "official_status": null
+    },
+    {
+      "county": "Clay",
+      "permit_reference": null,
+      "activity": null,
+      "location": "Middleburg",
+      "source_url": "https://findmyseptic.com/county/clay",
+      "verification": "third_party_unverified",
+      "official_status": null
+    }
+  ],
+  "disclaimer": "Directory-derived discovery leads only. Not independently verified county permits, completed jobs, or customer prospects. Dates not inferred from relative directory timestamps."
+}
