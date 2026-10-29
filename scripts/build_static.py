@@ -9,7 +9,7 @@ OUT = ROOT / "dist"
 PAGES = ["index.html", "prototype/index.html", "prototype/intelligence.html",
          "prototype/inventory.html", "prototype/atu-pbts.html"]
 DATA = ["data/septic-inventory-aggregate.json", "data/maintenance-entities.json",
-        "data/maintenance-products.json", "data/atu-pbts-systems.json", "data/opportunities.json"]
+        "data/maintenance-products.json", "data/atu-pbts-systems.json", "data/opportunities.json", "data/contractor-permit-discovery.json"]
 ALLOW = PAGES + DATA
 
 def build():
