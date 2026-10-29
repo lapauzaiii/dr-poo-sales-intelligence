@@ -2,7 +2,7 @@
   "dataset": "florida_dep_septic_inventory_aggregates",
   "data_type": "historical_septic_inventory_not_permits",
   "source_url": "https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/SEPTIC_SYSTEMS/MapServer/0",
-  "retrieved_at": "2026-10-28T17:23:51.911992+00:00",
+  "retrieved_at": "2026-10-29T17:32:16.523764+00:00",
   "county_code_mapping_verified": true,
   "county_code_system": "Florida Department of Revenue (CO_NO)",
   "county_mapping_source": "https://maps.floridahealth.gov/server/rest/services/FLWMI/FLWMI_Wastewater/MapServer/0",
